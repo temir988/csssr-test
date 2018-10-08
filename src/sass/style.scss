@@ -1,1 +1,18 @@
-@import "header/header.scss"
+// vars
+$purple: #5951D3;
+$yellow: #FFDB00;
+
+
+//libs
+@import "../libs/bootstrap/css/bootstrap";
+
+@import "layout/fonts";
+@import "layout/mixins";
+@import "layout/layout";
+@import "layout/icons";
+
+//blocks
+@import "blocks/breadcrumbs";
+
+//pages
+@import "pages/main-page";

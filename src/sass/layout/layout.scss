@@ -1,0 +1,88 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+	line-height: 1.42;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	transition: all 300ms;
+	&:hover {
+		text-decoration: none;
+		color: unset;
+	}
+}
+.wrapper {
+	flex-grow: 1;
+	position: relative;
+	padding-bottom: 80px;
+}
+
+.hide {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
+
+.header {
+	padding: 20px 0;
+	background: $purple;
+	color: #ffffff;
+}
+.footer {
+	padding: 20px 0;
+	background: $purple;
+	color: #ffffff;
+}
+
+
+.button {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	line-height: 46px;
+	border-radius: 30px;
+	border: 2px solid transparent;
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.section__title {
+	padding-left: 20px;
+	border-left: 2px solid $yellow;
+	font-weight: 600;
+	line-height: 57px;
+	font-size: 36px;
+	color: #4F4F4F;
+	margin-bottom: 50px;
+	@include phones {
+		line-height: normal;
+		margin-bottom: 30px;
+	}
+}

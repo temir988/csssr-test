@@ -1,0 +1,29 @@
+.breadcrumbs {
+    padding: 30px 0;
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        line-height: 23px;
+    }
+    a, li {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 14px;
+        color: #828282;
+    }
+    li {
+        &:after {
+            content: "/";
+            margin-left: 5px; 
+            margin-right: 5px;
+        }
+        &:last-child  {
+            &:after {
+                display: none;
+            }
+            
+        }
+    }   
+}
