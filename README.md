@@ -17,4 +17,5 @@ Start dev serve:
 
 `npm start`
 
-## If you have error `ReferenceError: internalBinding is not defined` try `npm install natives@1.1.6`
+## If you have error:
+`ReferenceError: internalBinding is not defined` try `npm install natives@1.1.6`
