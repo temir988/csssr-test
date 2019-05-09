@@ -1,7 +1,21 @@
 extends ../layout
 
 block title
-    title page index.pug 
+    title Анкета
 
 block content
-    main index page
+    .wrapper
+        .page
+            include ../blocks/header/header
+            
+            main
+                h1.page__title
+                    img(src="img/title.png", alt="Дело")            
+
+                include ../blocks/info/info
+                include ../blocks/about/about
+                include ../blocks/js-skill/js-skill
+
+
+
+            

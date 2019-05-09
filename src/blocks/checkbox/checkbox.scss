@@ -1,0 +1,46 @@
+.check {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .check__box:after {
+    display: block;    
+  }
+
+  &:focus + .check__box {
+    outline-color: $brown;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+
+  &:disabled + .check__box {
+    opacity: .5;
+  }
+}
+
+.check__box {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/box.png);
+  &:after {
+    content: "";
+    display: none;
+    width: 21px;
+    height: 27px;
+    position: absolute;
+    top: -50%;
+    left: 3px;
+    background-image: url(../img/check.png);
+  }
+}

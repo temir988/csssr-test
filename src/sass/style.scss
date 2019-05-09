@@ -1,10 +1,11 @@
 // vars
-$purple: #5951D3;
-$yellow: #FFDB00;
+$brown: #2f1b15;
 
 
 //libs
-@import "../libs/bootstrap/css/bootstrap";
+// @import "../libs/bootstrap/css/bootstrap-reboot";
+@import "../libs/normalize/normalize";
+// @import "../libs/rangeslider/rangeslider";
 
 @import "layout/fonts";
 @import "layout/mixins";
@@ -12,7 +13,11 @@ $yellow: #FFDB00;
 @import "layout/icons";
 
 //blocks
-@import "blocks/breadcrumbs";
+@import "../blocks/header/header";
+@import "../blocks/info/info";
+@import "../blocks/about/about";
+@import "../blocks/checkbox/checkbox";
+@import "../blocks/js-skill/js-skill";
 
 //pages
 @import "pages/main-page";

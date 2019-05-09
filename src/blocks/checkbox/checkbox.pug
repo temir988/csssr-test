@@ -1,0 +1,8 @@
+mixin checkbox(label, checked)
+  label.check
+    if checked
+      input(type="checkbox", checked).check__input
+    else
+      input(type="checkbox").check__input
+    span.check__box
+    |  #{label}

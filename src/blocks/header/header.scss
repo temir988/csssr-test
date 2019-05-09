@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
+  top: 12px;
+}
+
+.header__stamp {
+  position: relative;
+  right: -63px;
+}

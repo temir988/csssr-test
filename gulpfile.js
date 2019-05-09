@@ -94,7 +94,7 @@ gulp.task("serve", function() {
         server: "build/"
     });
 
-    gulp.watch("src/sass/**/*.scss", ["style"]);
+    gulp.watch("src/**/*.scss", ["style"]);
     gulp.watch("src/js/*.js", ["js"]);    
     gulp.watch("src/img/**/*.*", ["img"]);
     gulp.watch("src/**/*.pug", ["pug"]);

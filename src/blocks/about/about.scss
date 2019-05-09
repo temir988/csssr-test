@@ -1,0 +1,23 @@
+.about {
+  margin-bottom: 50px;
+}
+
+.about__list {
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about__title {
+  margin-bottom: 7px;
+}
+
+.about__description {
+  margin-bottom: 24px;
+}
+
+.about__item {
+  margin-bottom: 6px; 
+  width: 260px;
+}
