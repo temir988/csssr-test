@@ -1,26 +1,10 @@
-.js-skill__range {
-  display: block;
-  width: 101%;
-  min-height: 60px;
-  appearance: none;
-  background-color: transparent;
-  background-image: url(../img/slider-track.png);
-  background-position: 0 0;
-  background-size: cover;
-  outline: none;
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: 17px;
-    height: 14px;
-    background-image: url(../img/slider-point.png);
-    cursor: pointer;
-    transform: translateY(-10px);
-  } 
-  &:-ms-track {
-    width: 100%;
-    cursor: pointer;
-    background: transparent; 
-    border-color: transparent;
-    color: transparent;
+.js-skill__title {
+  margin-bottom: 40px;
+}
+
+.js-skill__slider {
+  .noUi-target {
+    background-image: url(../img/slider-track.png);
+    background-color: transparent;
   }
 }
