@@ -67,12 +67,17 @@ img {
 }
 
 .main {
-	margin-bottom: 70px;
+	margin-bottom: 83px;
 }
 
 .page__title {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	text-align: center;
+	img {
+		position: relative;
+		left: -17px;
+		top: -7px;
+	}
 }
 
 .title {

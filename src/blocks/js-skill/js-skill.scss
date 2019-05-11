@@ -1,9 +1,10 @@
 .js-skill {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .js-skill__title {
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 }
 
 .js-skill__slider {
@@ -37,12 +38,12 @@
 .js-skill__point {
   display: block;
   max-width: 170px;
-  line-height: 36px;
+  line-height: 19px;
   font-size: 13px;
   font-weight: bold;
   color: $brown;
   position: absolute;
-  top: 50px;
+  top: 57px;
   &:nth-child(2) {
     left: 19%;
   }
@@ -50,6 +51,7 @@
     left: 48.5%;
   }
   &:nth-child(4) {
-    right: 3px;
+    top: 63px;
+    right: 0px;
   }
 }

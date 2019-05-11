@@ -1,11 +1,11 @@
 .info {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 }
 
 .info__item {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 13px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -29,7 +29,7 @@
   background-color: transparent;
   background-image: url(../img/line.png);
   background-repeat: repeat-x;
-  background-position: 0 13px;
+  background-position: 0 7px;
   &:focus {
     outline-color: $brown;
   }
