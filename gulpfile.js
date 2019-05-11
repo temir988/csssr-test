@@ -91,7 +91,8 @@ gulp.task("build", function (done) {
 
 gulp.task("serve", function() {
     server.init({
-        server: "build/"
+        server: "build/",
+        open: false
     });
 
     gulp.watch("src/**/*.scss", ["style"]);

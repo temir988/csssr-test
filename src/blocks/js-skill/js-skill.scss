@@ -1,10 +1,55 @@
-.js-skill__title {
+.js-skill {
   margin-bottom: 40px;
 }
 
+.js-skill__title {
+  margin-bottom: 25px;
+}
+
 .js-skill__slider {
-  .noUi-target {
+  &.noUi-target {
+    min-height: 60px;
+    box-shadow: none;
+    border: 0;
     background-image: url(../img/slider-track.png);
+    background-color: transparent;    
+    background-position-x: -5px;
+    cursor: pointer;
+  }
+  .noUi-handle {
+    top: 9px;
+    right: -4px !important;
+    width: 17px;
+    height: 14px;
     background-color: transparent;
+    background-image: url(../img/slider-point.png);
+    box-shadow: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    &:after, &::before {
+      display: none;
+    }
+  }
+}
+
+.js-skill__point {
+  display: block;
+  max-width: 170px;
+  line-height: 36px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $brown;
+  position: absolute;
+  top: 50px;
+  &:nth-child(2) {
+    left: 19%;
+  }
+  &:nth-child(3) {
+    left: 48.5%;
+  }
+  &:nth-child(4) {
+    right: 3px;
   }
 }

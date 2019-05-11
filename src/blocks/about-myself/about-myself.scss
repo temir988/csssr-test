@@ -1,0 +1,28 @@
+.about-myself {
+  margin-bottom: 50px;
+}
+
+.about-myself__description {
+  margin-bottom: 40px;
+}
+
+.about-myself__title {
+  margin-bottom: 20px;
+}
+
+.about-myself__textarea {
+  width: 100%;
+  min-height: 180px;
+  line-height: 60px;
+  font-size: 30px;
+  font-family: 'Courier New';
+  color: $brown;
+  @include placecolor($brown);
+  background-color: transparent;
+  background-image: url(../img/line.png);
+  background-repeat: repeat;
+  background-position: -5px 23px;
+  outline: none;
+  border: 0;
+  resize: none;
+}

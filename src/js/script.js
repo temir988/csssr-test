@@ -1,14 +1,14 @@
-var range = document.getElementById('range');
+$(document).ready(function() {
+  var range = document.getElementById('range');
 
   noUiSlider.create(range, {
-      start: [4000],
-      step: 1000,
+      start: [49],
+      step: 1,
       range: {
-          'min': [2000],
-          'max': [10000]
+          'min': [0],
+          'max': [100]
       }
   });
 
-$(document).ready(function() {
-  
+  autosize($('textarea'));
 });
