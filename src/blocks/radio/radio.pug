@@ -1,0 +1,8 @@
+mixin radio(label, checked, name)
+  label.radio
+    if checked
+      input(type="radio", name="#{name}", checked).radio__input
+    else
+      input(type="radio", name="#{name}").radio__input
+    span.radio__circle
+    |  #{label}

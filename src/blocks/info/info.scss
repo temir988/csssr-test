@@ -2,35 +2,10 @@
   margin-bottom: 52px;
 }
 
-.info__item {
-  display: flex;
-  align-items: center;
+.info__item {  
   margin-bottom: 13px;
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.info__label {
-  margin-right: 15px;
-  font-weight: bold;
-  color: $brown;
-  font-size: 22px;
-}
-
-.info__input {
-  padding: 0 0 15px 15px;
-  flex-grow: 1;
-  font-family: 'Courier New';
-  color: #231f20;
-  @include placecolor(#231f20);
-  font-size: 30px;
-  border: 0;
-  background-color: transparent;
-  background-image: url(../img/line.png);
-  background-repeat: repeat-x;
-  background-position: 0 7px;
-  &:focus {
-    outline-color: $brown;
-  }
-}

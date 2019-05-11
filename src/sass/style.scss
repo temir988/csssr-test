@@ -1,25 +1,24 @@
 // vars
 $brown: #2f1b15;
 
-
 //libs
-// @import "../libs/bootstrap/css/bootstrap-reboot";
 @import "../libs/normalize/normalize";
 @import "../libs/nouislider/nouislider.min";
 
-@import "layout/fonts";
+//base
 @import "layout/mixins";
 @import "layout/layout";
-@import "layout/icons";
 
 //blocks
 @import "../blocks/header/header";
 @import "../blocks/info/info";
+@import "../blocks/field/field";
 @import "../blocks/about/about";
 @import "../blocks/checkbox/checkbox";
 @import "../blocks/js-skill/js-skill";
 @import "../blocks/about-myself/about-myself";
 @import "../blocks/future/future";
+@import "../blocks/radio/radio";
 @import "../blocks/footer/footer";
 
 //pages

@@ -3,23 +3,14 @@ section.future
   p.description.future__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
 
   ul.future__list
-    li.future__item
-      label.radio
-        input(type="radio", name="future").radio__input
-        span.radio__circle
-        | Верстать
-    li.future__item
-      label.radio
-        input(type="radio", name="future", checked).radio__input
-        span.radio__circle
-        | Прокачиваться в JS
-    li.future__item
-      label.radio
-        input(type="radio", name="future").radio__input
-        span.radio__circle
-        | Менеджерство
-    li.future__item
-      label.radio
-        input(type="radio", name="future").radio__input
-        span.radio__circle
-        | Другое
+    include ../radio/radio
+    -
+      var dataRadio = [
+        {label: 'Верстать', checked: false, name: 'future'}, 
+        {label: 'Прокачиваться в JS', checked: true, name: 'future'},
+        {label: 'Менеджерство', checked: false, name: 'future'},
+        {label: 'Другое', checked: false, name: 'future'}
+      ];
+    each val in dataRadio
+      li.future__item   
+        +radio(val.label, val.checked, val.name)

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
   var range = document.getElementById('range');
 
   noUiSlider.create(range, {
@@ -10,5 +10,5 @@ $(document).ready(function() {
       }
   });
 
-  autosize($('textarea'));
+  autosize(document.querySelector('textarea'));
 });
