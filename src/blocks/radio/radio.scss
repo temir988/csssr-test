@@ -8,8 +8,14 @@
 }
 
 .radio__input {
-  position: absolute;
-  appearance: none;
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 
   &:checked + .radio__circle:after {
     display: block;
@@ -18,7 +24,7 @@
   &:focus + .radio__circle {
     outline-color: $brown;
     outline-style: auto;
-    outline-width: 5px;
+    outline-width: 1px;
   }
 
   &:disabled + .radio__circle {

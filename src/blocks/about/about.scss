@@ -3,10 +3,12 @@
 }
 
 .about__list {
-  max-height: 250px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  width: 795px;
   @include r(910) {
     max-height: 350px;
   }

@@ -9,17 +9,24 @@
 }
 
 .check__input {
-  position: absolute;
-  appearance: none;
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 
   &:checked + .check__box:after {
     display: block;    
   }
 
   &:focus + .check__box {
-    outline-color: $brown;
-    outline-style: auto;
-    outline-width: 5px;
+    // outline-color: $brown;
+    // outline-style: auto;
+    // outline-width: 1px;
+    border: 1px solid $brown;
   }
 
   &:disabled + .check__box {
@@ -34,6 +41,9 @@
   width: 19px;
   height: 19px;
   background-image: url(../img/box.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid transparent;
   &:after {
     content: "";
     display: none;
@@ -43,5 +53,6 @@
     top: -50%;
     left: 3px;
     background-image: url(../img/check.png);
+    outline: none;
   }
 }
