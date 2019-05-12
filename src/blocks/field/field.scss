@@ -1,6 +1,10 @@
 .field {
   display: flex;
   align-items: center;
+  @include r(560) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .field__label {
@@ -8,6 +12,12 @@
   font-weight: bold;
   color: $brown;
   font-size: 22px;
+  @include r(768) {
+    font-size: 16px;
+  }
+  @include r(560) {
+    margin-bottom: 5px;
+  }
 }
 
 .field__input {
@@ -24,6 +34,12 @@
   background-position: 0 7px;
   &:focus {
     outline-color: $brown;
+  }
+
+  @include r(768) {
+    padding: 0 0 10px 10px;
+    font-size: 22px;
+    background-position: 0 4px;
   }
 }
 

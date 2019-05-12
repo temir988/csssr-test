@@ -1,6 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
+  @include r(800) {
+    margin-bottom: 30px;
+  }
 }
 
 .header__logo {
@@ -11,4 +14,10 @@
 .header__stamp {
   position: relative;
   right: -63px;
+  @include r(768) {
+    right: 0;
+  }
+  @include r(550) {
+    margin-left: 30px;
+  }
 }

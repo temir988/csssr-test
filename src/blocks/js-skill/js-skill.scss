@@ -1,10 +1,16 @@
 .js-skill {
   padding-bottom: 40px;
   margin-bottom: 22px;
+  @include r(600) {
+    padding-bottom: 80px;
+  }
 }
 
 .js-skill__title {
   margin-bottom: 9px;
+  @include r(480) {
+    margin-bottom: 15px;
+  }
 }
 
 .js-skill__slider {
@@ -15,11 +21,23 @@
     background-image: url(../img/slider-track.png);
     background-color: transparent;    
     background-position-x: -5px;
+    background-repeat: no-repeat;
     cursor: pointer;
+    @include r(1040) {
+      background-size: contain;
+    }
+    @include r(600) {
+      background-position-x: 0;      
+    }
   }
+
+  .noUi-base {
+    width: 99.3%;
+  }
+
   .noUi-handle {
     top: 9px;
-    right: -4px !important;
+    right: -10px !important;
     width: 17px;
     height: 14px;
     background-color: transparent;
@@ -31,6 +49,15 @@
 
     &:after, &::before {
       display: none;
+    }
+    @include r(900) {
+      top: 5px;
+    }
+    @include r(600) {
+      top: 0;
+    }
+    @include r(480) {
+      top: -5px;
     }
   }
 }
@@ -44,8 +71,19 @@
   color: $brown;
   position: absolute;
   top: 57px;
+
+  @include r(350) {
+    font-size: 11px;
+    line-height: 15px;
+    top: 35px;
+  }
+
+
   &:nth-child(2) {
     left: 19%;
+    @include r(480) {
+      left: 23%;
+    }
   }
   &:nth-child(3) {
     left: 48.5%;
@@ -53,5 +91,12 @@
   &:nth-child(4) {
     top: 63px;
     right: 0px;
+    @include r(350) {
+      top: 35px;
+    }
+  }
+
+  @include r(1040) {
+    max-width: 25%;
   }
 }

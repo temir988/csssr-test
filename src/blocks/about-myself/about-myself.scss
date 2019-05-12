@@ -25,4 +25,10 @@
   outline: none;
   border: 0;
   resize: none;
+  @include r(768) {
+    font-size: 22px;
+  }
+  @include r(480) {
+    font-size: 18px;
+  }
 }

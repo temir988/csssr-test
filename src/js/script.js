@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
       range: {
           'min': [0],
           'max': [100]
-      }
+      },
+      // orientation: 'vertical',
   });
 
   autosize(document.querySelector('textarea'));

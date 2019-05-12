@@ -64,6 +64,15 @@ img {
 	margin: 0 auto;
 	padding: 50px 118px 70px 111px;
 	background-image: url(../img/pattern.jpg);
+	@include r(768) {
+		padding: 50px 60px 70px;
+	}
+	@include r(600) {
+		padding: 50px 50px 70px;
+	}
+	@include r(480) {
+		padding: 50px 30px 70px;
+	}
 }
 
 .page__title {
