@@ -8,12 +8,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  width: 795px;
+
   @include r(910) {
-    max-height: 350px;
+    height: 360px;
   }
+  
   @include r(600) {
-    max-height: none;
+    height: auto;
   }
 }
 

@@ -17,7 +17,9 @@
   font-size: 30px;
   font-family: 'Courier New';
   color: $brown;
+
   @include placecolor($brown);
+
   background-color: transparent;
   background-image: url(../img/line.png);
   background-repeat: repeat;
@@ -25,9 +27,11 @@
   outline: none;
   border: 0;
   resize: none;
+
   @include r(768) {
     font-size: 22px;
   }
+  
   @include r(480) {
     font-size: 18px;
   }

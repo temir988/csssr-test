@@ -1,26 +1,34 @@
 .future__title {
   margin-bottom: 3px;
 }
+
 .future__description {
   margin-bottom: 15px;
 }
+
 .future__list {
   display: flex;
+
   @include r(900) {
     flex-wrap: wrap;
   }
+
   @include r(600) {
     display: block;
   }
 }
+
 .future__item {
   margin-right: 19px;
+
   &:last-child {
     margin-right: 0;
   }
+
   @include r(900) {
     margin-bottom: 10px;
   }
+  
   @include r(600) {
     margin-right: 0px;
   }
