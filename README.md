@@ -1,13 +1,15 @@
-# Second simple gulp setup
-Simple gulp setup with used SCSS, Pug.
+# Test project
+Used SCSS, Pug, BEM, Gulp, Pixel Perfect.
+# Live DEMO (maybe slow speed)
+http://screeching-anger.surge.sh/
 ## Usage 
 Clone repository:
 
-`git clone https://github.com/temir988/start-template-pug-scss-.git`
+`git clone https://github.com/temir988/csssr-test`
 
 Go to the project folder:
 
-`cd start-template-pug-scss-`
+`cd csssr-test`
 
 Install dependencies:
 
